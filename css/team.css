@@ -1,0 +1,329 @@
+
+/* ==================== GENERAL ====================== */
+body {
+  margin: 0;
+  background-color: transparent;
+  font-family: Inter;
+}
+h1,
+h3,
+h4 {
+  text-align: center;
+}
+h3,
+h4 {
+  color:#ffffff;
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff;
+}
+p {
+  margin-top: 0rem;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+}
+img {
+  cursor: pointer;
+  width: 1rem;
+  margin-bottom: -0.1rem; /* align img with text */
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section {
+  padding: 1rem 2rem 0.5rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  border: 0.5px solid;
+}
+
+
+/* ===================== INPUT ======================= */
+.input {
+  width: 25%;
+  flex-grow: 2;
+  border-color: black;
+  background-color: transparent;
+}
+.input h3 {
+  margin: -1rem -2rem 0;
+  padding: 1rem 0;
+  background-color: #0E4DA4;
+  color: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+}
+.input form {
+  margin: 1rem 0;
+}
+label {
+  color: black;
+  width: 7rem;
+  display: inline-block;
+  margin-top: 0.7rem;
+  transition: background-color 0.5s ease-out;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+input {
+  margin-top: 1rem;
+}
+.error {
+  transition: ease-in-out 1s transform;
+  padding: 1rem 10rem;
+  border-radius: 10rem;
+  font-weight: bold;
+  position: absolute;
+  top: -4rem;
+  left: calc(15% - 5rem);
+  color: white;
+  background-color: red;
+}
+.notify {
+  background-color: #093943;
+}
+.retreive{
+  width:5rem;
+  box-shadow: 0px 0px 5px -1px;
+}
+
+/* ================== CONTROLLER ===================== */
+.controller {
+  width: 15rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: black;
+  background-color: transparent;
+}
+.controller h3 {
+  width: calc(100%);
+  background-color: #0E4DA4;
+  margin: -1rem 0 0;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+select {
+  border-radius: 10px;
+  text-align: center;
+}
+
+a {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+a:active {
+  transform: scale(0.95);
+}
+select {
+  margin-top: 1rem;
+}
+.inf-memb,
+.inf-teams {
+  margin: 0.5rem 0 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1px;
+  font-size: 0.9rem;
+}
+.start {
+  box-shadow: 2px 2px 2px black;
+color: #000000;}
+.clear {
+  transition: ease-in 1s transform;
+  box-shadow: 2px 2px 2px black;
+color: #000000;}
+.teamessage {
+  transition: ease-in-out 1s transform;
+  padding: 1rem 10rem;
+  border-radius: 10rem;
+  font-weight: bold;
+  position: absolute;
+  top: -5rem;
+  left: calc(65% - 5rem);
+  color: white;
+  background-color: #0000;
+}
+.save {
+  box-shadow: 2px 2px 2px black;
+  color: #000000;}
+.saved {
+  transition: ease-in-out 1s transform;
+  padding: 1rem 10rem;
+  border-radius: 10rem;
+  font-weight: bold;
+  position: fixed;
+  top: -5rem;
+  left: calc(45% - 5rem);
+  color: white;
+  background-color: #20ad62;
+}
+.show {
+  transform: translateZ(20rem);
+}
+/* ====================== LIST ======================= */
+.member-list {
+  width: 30%;
+  flex-grow: 999;
+  border-color: #093943;
+  background-color:transparent;
+}
+.member-list h3 {
+  margin: -1rem -2rem 0;
+  padding: 1rem 0;
+  background-color: #0E4DA4;
+  color: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 17rem;
+}
+.member {
+  margin: 1rem;
+}
+.list input {
+  border: solid 1px #e9b879;
+  width: 6rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: rgb(179, 168, 143);
+  color: white;
+  text-align: center;
+}
+
+/* ===================== TEAMS ======================= */
+.teamessage {
+  transition: ease-in-out 1s transform;
+  padding: 1rem 10rem;
+  border-radius: 10rem;
+  font-weight: bold;
+  position: absolute;
+  top: -4rem;
+  left: calc(15% - 5rem);
+  color: white;
+  background-color: red;}
+  
+.teams {
+  width: 100%;
+  background-color: transparent;
+}
+.teams h3 {
+  background-color: #0E4DA4;
+  margin: -1rem -2rem 0;
+  padding: 1.5rem 0;
+  color: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+}
+.teams h5 {
+  background-color: #0E4DA4;
+  text-align: center;
+  margin-top: -1.5rem;
+  visibility: hidden;
+  color: white;
+}
+.teams:hover h5 {
+  visibility: visible;
+}
+.teams-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.teams-wraper h3 {
+  display: block;
+}
+.team {
+  margin: 0.7rem 0.5rem;
+  width: fit-content;
+  min-width: 5rem;
+  border-radius: 10px;
+  border: 2px solid #82aba1;
+  background-color: white;
+}
+h4 {
+  background-color: #82aba1;
+  margin: 0.7rem 0.5rem 0.4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: -0.1rem -0.1rem 0;
+  padding: 1rem 0.5rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.team-member-list {
+  text-align: center;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.team-member {
+  cursor: pointer;
+  z-index: 100;
+}
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* ============================ ANIMATIONS ================================ */
+.team-mock h4,
+.team-mock .team-member-list {
+  display: flex;
+  text-align: center;
+}
+.team-mock p {
+  font-weight: bold;
+  background-color: rgba(1, 1, 1, 0);
+  margin: 0 auto;
+}
+.tick1 {
+  animation: shake 0.5s infinite 0s;
+}
+.tick2 {
+  animation: shake 0.5s infinite 0.3s;
+}
+.tick3 {
+  animation: shake 0.5s infinite 0.6s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0.2px, 0.2px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-0.2px, -2px) rotate(-1deg);
+  }
+  30% {
+    transform: translate(1px, 0.5px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-0.2px, 2px) rotate(-1deg);
+  }
+  70% {
+    transform: translate(1px, 0.2px) rotate(-1deg);
+  }
+  90% {
+    transform: translate(0.2px, 0.5px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0.2px, -0.5px) rotate(-1deg);
+  }
+}
